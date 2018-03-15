@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Error Parser</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="scripts/jquery.tmpl.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input[type=button][id*=cleanOIPError]").click(function () {
+                
+                var strInput = $('#message').val();
+                var that = $('#message').val();
+                var newText = that.split(' at ').join('\n\n');
+
+                $("#Two").html(newText);
+
+                //--------------------------------------------------
+                // Loop through each line in textarea
+                //--------------------------------------------------
+                var lines = $('#Two').text().split('\n');
+                var newAppendAreaText = '';
+                $.each(lines, function (n, elem) {
+                    //alert('LINE: ' + elem)
+
+                    var str1 = 'System.Web.HttpUnhandledException ';
+                    var str2 = 'ASC.CACIO.OIP.';
+                    var str3 = 'System.Web.HttpApplication.ExecuteStep';
+
+                    //check for str1
+                    if (elem.indexOf(str1) != -1)
+                    {
+                        newAppendAreaText = newAppendAreaText + elem + '\n\n';
+                    }
+
+                    //check for str2
+                    if (elem.indexOf(str2) != -1)
+                    {
+                        newAppendAreaText = newAppendAreaText + elem + '\n\n';
+                    }
+
+                    //check for str3
+                    if (elem.indexOf(str3) != -1) {
+
+                        //format str3 by adding extra line breaks below
+                        var addUserLineBreak = elem.split(' User: ').join('\n\nUser: ');
+                        addUserLineBreak = addUserLineBreak.split(' Application Name: ').join('\nApplication Name: ');
+
+                        addUserLineBreak = addUserLineBreak.split(' Url: ').join('\nUrl: ');
+
+                        addUserLineBreak = addUserLineBreak.split(' --------------------------------').join('\n\n');
+
+                        newAppendAreaText = newAppendAreaText + addUserLineBreak  + '\n\n';
+                    }
+                });
+
+                $("#Three").html(newAppendAreaText);
+            });
+        });
+
+        
+    </script>
+</head>
+<body>
+    Insert message<br />
+    <input type="text" id="message" style="width: 1000px;" /><br />
+    <input type="button" id="cleanOIPError" value="OIP Error" />&nbsp;<input type="button" id="cleanAnotherError" value="Other Error" /><br />
+    <br />
+    <textarea id="Two" style="height: 800px; width: 1400px; display: none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" ></textarea> <br /><br />
+
+    <label><b>Brads Formatted Area</b></label>
+    <textarea id="Three" style="height: 400px; width: 1400px;" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+</body>
+</html>
