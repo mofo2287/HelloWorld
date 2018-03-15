@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>ASC Stuff</title>
+
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+   
+  	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->	
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+	<script src="bootstrap.min.js"></script>
+    	
+
+
+	<style>
+		.football {
+			font-family: 	Arial, Verdana, sans-serif;
+			font-size:	8px;
+		}
+
+		.right {
+			padding-left: 5px;
+		}
+		.win {
+			padding-left: 5px;
+			color: green;
+		}
+		.lose {
+			padding-left: 5px;
+			color: red;
+		}
+		.topcorner {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.topNextToHawks {
+			position: absolute;
+			top: 10px;
+			right: 23px;
+		}
+		
+
+	</style>
+
+	<script>
+		$(function () { 
+    			var myChart = Highcharts.chart('container', {
+        			chart: {
+            			   type: 'bar'
+        			},
+        			title: {
+            			   text: 'Big Ten Teams'
+        			},
+        			xAxis: {
+            			   categories: ['Wins', 'Loses']
+        			},
+        			yAxis: {
+            			   title: {
+               			     text: 'Wins and Loses'
+            			   },
+			           tickInterval: 1
+        			},
+				credits: {
+				   enabled: false
+				},				
+        			series: [{
+            			   name: 'Iowa',
+				   color: '#FFFF33',
+            				data: [5,2]
+        			}, {
+            			   name: 'Nebraska',
+                                   color: '#FB0A0A',
+            				data: [6,0]
+				}, {
+				   name: 'Minnesota',
+				   color: '#D35400',
+					data: [4,2]
+				}, {
+				   name: 'Wisconsin',
+				   color: '#C70039', 
+					data: [4,2]
+				}, {
+				   name: 'Purdue',
+				   color: '#060606',
+					data: [3,3]
+				}, {
+				   name: 'Illinois',
+				   color: '#F1832D', 
+					data: [2,4]
+				},{
+            			   name: 'Northwestern',
+				   color: '#2D3CF1',
+            				data: [3,3]
+        			    }]					
+    				});
+			});
+	</script>
+	
+</head>
+<body>
+	<br />
+        <div class="container">
+                <div class="row-fluid" style="float: none; margin: 0 auto;">
+                        <div style="text-align: center"><span style="font-size: 40px;">ASC Stuff</span></div>
+                </div>
+        </div>
+                
+        <br />
+	<br />
+        <br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	
+	<div class="container">
+	   <ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  		<li><a data-toggle="tab" href="#menu1">AJ Tracker</a></li>
+  		<li><a data-toggle="tab" href="#menu2">G2</a></li>
+		<li><a data-toggle="tab" href="#macMenu">MAC Calendar</a></li>
+		<li><a data-toggle="tab" href="#oip">OIP</a></li>
+		<li><a data-toggle="tab" href="#eboard">EBoard</a></li>
+		<li><a data-toggle="tab" href="#menu3">Bowhead</a></li>
+		<li><a data-toggle="tab" href="#menu4">Coding</a></li>
+		<li><a data-toggle="tab" href="#stocks">Stocks</a></li>
+		<li><a data-toggle="tab" href="#sansTraining">Sans Training</a></li>
+                <li><a data-toggle="tab" href="#future1">Future1</a></li>
+		<li><a data-toggle="tab" href="#future2">Future2</a></li>
+		<li><a data-toggle="tab" href="#future3">Future3</a></li>
+	   </ul>
+
+	   <div class="tab-content">
+    		<div id="home" class="tab-pane fade in active">
+      			<div class="container">
+				<div class="row">
+					&nbsp;
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="https://sat.aschq.army.mil/hourslog/Protected/default.aspx" target="_blank">Log Daily Hours</a>  
+					</div>
+					<div class="col-sm-4">
+						<a href="https://sat.aschq.army.mil/Deployment_Request" target="_blank">Deployment Request</a></br>
+					</div>
+					<div class="col-sm-4">
+						<a href="https://achecker.ca/checker/index.php#output_div" target="_blank">508 scan  <font size="1">***WCAG 2.0 (Level A) / 508 section***</font></a>
+					</div>
+				</div>
+
+                		<div class="row">
+                        		<div class="col-sm-10"> 
+						
+						<br />                               
+                                		<b>TFS:</b> ROCKA0DOVM214                                
+                                		<br />                                
+                                		V:\0 Application Development Team\ASC Infrastructure Team\DB Connection Tool                                
+                                		<br />
+						\\jmcvs01\jmcfs02\Data\Contractors\Vista Tech     <--- V: drive
+						<br />
+						<br />                                
+                                		<b>SQL Server:</b><br />
+				 		QASQLRIA01\QASQLRIA01 <br/ >
+				 		DEVSQLRIA01\DEVSQLRIA01 <br />
+						PRODSQLRIA02\PRODSQLRIA02 -- <b>PROD</b><br />
+						
+						<br />
+						<b>ASC deployment request link</b>  https://sat.aschq.army.mil/Deployment_Request/Login.aspx<br /> 
+                          
+                                
+                        		</div>
+				</div>
+			</div>
+    		</div>
+    		<div id="menu1" class="tab-pane fade">
+  			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4>AJTracker</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						Sharepoint Designer - https://vnext.aep.army.mil/sites/asc2/ajtest
+					</div>			
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="https://vnext.aep.army.mil/sites/asc2/ajtest?FollowSite=1&SiteName=AJTest">Web Test Site</a>
+						https://vnext.aep.army.mil/sites/asc2/ajtest?FollowSite=1&SiteName=AJTest
+					</div>
+				</div>
+			</div>
+    		</div>
+    		<div id="menu2" class="tab-pane fade">
+      			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4>G2</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="https://dev.aschq.army.mil/g2">G2</a>						
+					</div>
+				</div>
+			</div>
+    		</div>
+		<div id="oip" class="tab-pane fade">
+      			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4>OIP</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="https://asc.aep.army.mil/sites/SPTeam/ProjectSites/OIPEboardIntTracker/SitePages/Home.aspx">OIP Issue Tracking</a>
+						<br />
+						<br />
+						<a href="https://dev.aschq.army.mil/sgsoip/OIPMainMenu.aspx">OIP DEV</a>
+						<br />
+						<a href="https://sat.aschq.army.mil/sgsoip/STATMainMenu.aspx">OIP SAT</a>
+						<br />
+						<a href="https://dev.aschq.army.mil/sgsoip">OIP SQL DEV</a>
+						<br />
+						<br /> 
+						<b>Dev server path:</b>\\rockc2fsvm101\webpages\SGSOIP<br />
+						<br />
+						<b>SAT server path:</b>\\rockc2fsvm102\webpages\SGSOIP<br />
+						<br />
+						<b>PROD server path:</b>https://apps.aschq.army.mil/sgsoip/inspectcode.aspx<br />
+						<br />
+						<a href="ErrorParser.html">Error Parser</a><br />
+						<br />
+						<a href="OIPCustomerEmailer.html">OIP Customer Emailer Notes</a><br />
+						<br />
+						<a href="http://fa2png.io/" target="_blank">Convert fonts to png</a><br />
+                                                <br />
+                                                <span>Site.Master sessionTimeout = "480";</span>
+					</div>
+				</div>
+			</div>
+    		</div>
+		<div id="eboard" class="tab-pane fade">
+      			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4>EBoard</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+		        			<a href="https://dev.aschq.army.mil/eboard">EBoard DEV</a>
+						<br />
+						<a href="https://dev.aschq.army.mil/eboard">EBoard SAT</a>
+						
+					</div>
+				</div>
+			</div>
+    		</div>
+		<div id="macMenu" class="tab-pane fade">
+      			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4>MAC Calendar</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="https://aep.army.mil/apps/MAC/ASC/SitePages/Welcome.aspx">MAC</a>
+					</div>
+				</div>
+			</div>
+    		</div>
+		<div id="menu3" class="tab-pane fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="http://webmail.bowheadsupport.com" target="_blank">Webmail</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.neosystems-usa.com/uic/clienttools.html" target="_blank">Deltek</a>&nbsp;&nbsp;&nbsp;&nbsp;<b>Domain: UICPROD</b>&nbsp;&nbsp;&nbsp;&nbsp;FYI - Email: Bradley.Johnston@bowheadsupport.com
+					</div>
+					<div class="col-sm-10">
+						<a href="http://hr.uicalaska.com" target="_blank">UIC Alaska</a>&nbsp;&nbsp;&nbsp;&nbsp;<b>UIC\bradley.johnston</b>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.bowheadsupport.com/images/pdf/Benefits_At_A_Glance_2014.pdf" target="_blank">Bowhead benefits 2014</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.bowheadsupport.com/images/pdf/Benefits_At_A_Glance_2016.pdf" target="_blank">Bowhead benefits 2016</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.bowheadsupport.com/newhire_fulltime_2016" target="_blank">New Hire Fulltime 2016</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.bowheadsupport.com/benefits_newhire_fulltime_2017/" target="_blank">New Hire Fulltime 2017</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="https://www.uicportal.com/Pages/employeeresources.aspx" target="_blank">UIC Application and Network Access Portal</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.bowheadsupport.com/" target="_blank">Bowhead</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://www.bowheadsupport.com/images/pdf/FT_New_Hire_Check-List_2014.pdf" target="_blank">New Hire check list</a>
+					</div>
+					<div class="col-sm-10">
+						<a href="http://uic.americanmarketing.biz/" target="_blank">Bowhead store</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menu4" class="tab-pane fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://hackerthemes.com/bootstrap-cheatsheet">Bootstrap 4 cheat sheet</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://www.jsoneditoronline.org/">Json Online Editor</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="todo.html">ToDo List</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://scotch.io">scotch.io</a> 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="http://johnnycode.com/2014/03/27/using-jquery-validate-plugin-html5-data-attribute-rules/" >data tags - good list</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://www.meetup.com/QCCoders/">Quad City Coders</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						&nbsp;
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://asc.aep.army.mil/sites/SPTeam/PKB/SitePages/Home.aspx">Developer Tips</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://sat.aschq.army.mil/Deployment_Request/RequestDashboard.aspx?filter=user">Developers Deploy Request</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://asc.aep.army.mil/sites/G6/g6staff/ims/Lists/UserManuals/AllItems.aspx">Application Manuals</a> 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://angular.io/">Angular IO</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="http://json2csharp.com/">json 2 csharp</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="http://www.sqlines.com/online">Oracle-to-SQL</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="https://www.cssout.com"> Take inline style out</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="http://www.sanfoundry.com/csharp-programming-examples/">  Cool site</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="stocks" class="tab-pane fade">
+      			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4>Stocks</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="http://www.marketwatch.com">Marketwatch</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="https://www.iposcoop.com/ipo-calendar/">IPO Calendar</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="#">Future</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10">
+						<a href="https://www.barchart.com">Bar Chart</a>
+					</div>
+				</div>
+			</div>
+    		</div>
+		<div id="sansTraining" class="tab-pane fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						www.sans.org </br>
+
+						mrb-22@mchsi.com </br>
+
+						-account dashboard </br>
+						-sans ondemand </br>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="future1" class="tab-pane fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						Future1 </br>
+						use this tab for something </br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="future2" class="tab-pane fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						Future2 </br>
+						use this tab for something </br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="future3" class="tab-pane fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						Future3 </br>
+						use this tab for something </br>
+					</div>
+				</div>
+			</div>
+		</div>
+  	   </div>
+	</div>
+
+	<br />
+	<br />
+	<hr>
+	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="http://www.spotrac.com/nfl/free-agents/dallas-cowboys/">Cowboys free agents 2017</a><br />
+				<a href="https://www.prosportstransactions.com/football/Search/Search.php">NFL Transactions</a><br />
+				<a href="http://www.nfl.com/news/story/0ap3000000695231/article/practice-squad-tracker">NFL Practice Squad Tracker</a><br />
+				<a href="http://www.espn.com/nfl/schedulegrid">NFL 2017 schedule grid</a><br />
+				<a href="https://twitter.com/iowahoops?lang=en" target="_blank">Iowa Basketball Twitter</a><br />
+				<a href="https://twitter.com/HawkeyeFootball" target="_blank">Hawks on Twitter</a><br />
+				<a href="https://www.goiowaawesome.com/" target="_blank">Go Iowa Awesome</a><br />
+				<a href="https://twitter.com/DallasCowboys" target="_blank">Cowboys on Twitter</a><br /> 
+				<a href="http://www.cfbstats.com" target="_blank">College Football Stats</a><br />
+				<a href="https://www.sports-reference.com/cfb/" target="_blank">College Sports Reference</a><br />
+				<a href="http://www.ncaa.com/news/football/article/college-football-tv-schedule-game-times-preview">College Football TV Schedule</a><br />
+				<a href="https://playoffpredictors.com/">NFL Playoff Predictor</a><br />
+			</div>
+			<div class="col-sm-3">
+				<a href="http://lb.511ia.org/ialb/cameras/route.jsf?route=19%3A10&view=state&text=m&textOnly=false" target="_blank">I-74 cam</a><br />
+                                <a href="http://www2.mvr.usace.army.mil/MVRCams/RiverCam.cfm" target="_blank" >Arsenal Bridge Cam</a><br />
+				<a href="http://rivergages.mvr.usace.army.mil/MVRCams/RiverCam.cfm" target="_blank"> Arsenal Bridge Cam ***NEW***</a><br />
+                                <a href="http://kwqc.com/2014/12/15/idot-centennial-bridge-traffic-cam-illinois-bound/" target="_blank">Centennial Bridge cam</a><br />
+                                <a href="http://www.marinetraffic.com/" target="_blank">Stupid Barges</a><br />
+                                <a href="http://i74bridge.com" target="_blank">I 74 Bridge</a><br />                                
+                                <a href="http://www.mvr.usace.army.mil/Missions/Navigation.aspx" target="_blank">Locks stuff - if it works</a><br />
+				<a href="http://www.i74riverbridge.com/" target="_blank">I 74 New Bridge</a><br />
+				<a href="http://www.reuters.com" target="_blank">Reuters</a><br/>
+				
+			</div>
+			<div class="col-sm-3">
+				<a href="http://www.belgianvillagetogo.com">Belgian Village</a><br />
+				<a href="https://asc.aep.army.mil/sites/G6/g6staff/Lists/FitnessChallenge">Fitness Challenge</a><br />
+			</div>
+			<div class="col-sm-3">
+				<a href="http://eventful.com/davenport/events" target="_blank">Events Davenport</a><br />
+				<a href="http://www.pollstar.com" target="_blank">Pollstar</a><br />
+				<a href="http://www.billboard.com/charts/hot-mainstream-rock-tracks" target="_blank">Billboard Top Rock Tracks</a><br />
+				<a href="http://www.howthemarketworks.com/" target="_blank">Stock Market Challenge</a><br />
+			</div>
+		</div>
+	</div>
+
+<!--  --------------------------------------------------------------------------------------------------- -->
+<!--  ------- Team schedule Area ------------------------------------------------------------------------ -->
+<!--  --------------------------------------------------------------------------------------------------- -->
+
+	<br />
+	<br />
+	<div class="topcorner">
+	<h4>Iowa Hawkeyes</h4>
+	<table class="football">	
+		<tr>
+			<td><b>DATE</b></td><td class="right"><b>OPPONENT</b></td><td>&nbsp;</td>
+
+		</tr>
+		<tr>
+			<td>Sat, Sept 1</td><td class="right">vs N. Illinois</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Sept 8</td><td class="right">vs Iowa State</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Sept 15</td><td class="right">vs Northern Iowa</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Sept 22</td><td class="right">vs Wisconsin</td><td class="win"></td><td class="lose"></td>
+		</tr>
+		<tr>
+			<td>Sat, Oct 6</td><td class="right">@ Minnesota</td><td class="win"></td><td class="lose"></td>
+		</tr>
+		<tr>
+			<td>Sat, Oct 13</td><td class="right">@ Indiana</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Oct 20</td><td class="right">vs Maryland</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Oct 27</td><td class="right">@ Penn State</td><td class="win"></td><td class="lose"></td>
+		</tr>
+		<tr>
+			<td>Sat, Nov 3</td><td class="right">@ Purdue</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Nov 10</td><td class="right">vs Northwestern</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Sat, Nov 17</td><td class="right">@ Illinois</td><td class="win"></td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Frie, Nov 23</td><td class="right">vs Nebraska</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="Football2016.html">Football 2016</a></td>
+		</tr>
+		<tr>
+			<td><a href="HawkeyeBasketball2017.html">Basketball 2017</a></td>
+		</tr>
+		<tr>
+			<td><a href="HawkeyeBasketball20172018.html">Basketball 2017-2018</a></td>
+		</tr>
+	</table>
+	</div>
+
+	<br />
+	<br />
+	<div class="topNextToHawks">
+	<h4>Dallas Cowboys</h4>
+	<table class="football">	
+		<tr>
+			<td><b>DATE</b></td><td class="right"><b>OPPONENT</b></td><td>&nbsp;</td>
+
+		</tr>
+		<tr>
+			<td>Sept 10</td><td class="right">New York Giants</td><td class="win">W 19-3</td>
+		</tr>
+		<tr>
+			<td>Sept 17</td><td class="right">at Broncos </td><td class="lose">L 17-42</td>
+		</tr>
+		<tr>
+			<td>Sept 25</td><td class="right">at Cardinals</td><td class="win">W 28-17</td>
+		</tr>
+		<tr>
+			<td>Oct 1</td><td class="right">Rams </td><td class="lose">L 30-35</td>
+		</tr>
+		<tr>
+			<td>Oct 8</td><td class="right">Packers</td><td class="lose">L 31-35</td>
+		</tr>
+		<tr>
+			<td>Oct 15</td><td class="right">Bye week </td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Oct 22</td><td class="right">at 49ers</td><td class="win">W 40-10</td>
+		</tr>
+		<tr>
+			<td>Oct 29</td><td class="right">at Redskins</td><td class="win">W </td>
+		</tr>
+		<tr>
+			<td>Nov 5</td><td class="right">Chiefs</td><td class="win">W </td>
+		</tr>
+		<tr>
+			<td>Nov 12</td><td class="right">at Falcons</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Nov 19</td><td class="right">Eagles</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Nov 23</td><td class="right">Chargers</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Nov 30</td><td class="right">Redskins</td><td class="lose"></td>
+		</tr>
+		<tr>
+			<td>Dec 10</td><td class="right">at Giants</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Dec 17</td><td class="right">at Raiders</td><td class="win"></td>
+		</tr>
+		<tr>
+			<td>Dec 24</td><td class="right">Seattle</td><td class="lose"></td>
+		</tr>
+		<tr>
+			<td>Dec 31</td><td class="right">at Eagles</td><td class="lose"></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="DallasCowboys2016.html">Dallas Cowboys 2016</a></td>
+		</tr>
+	</table>
+	</div>
+
+
+	<br />
+	<br />
+	<br />
+	<!--  HIGH CHART AREA -->
+	
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<div id="container" style="height: 400px; width: 1000px;"></div>
+	<br />
+	<br />
+	<div style="padding-left: 40px;">
+		<a href="HighMap.html">Map of Iowa</a>
+	</div>
+</body>
+</html>
